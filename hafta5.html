@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
-    <style>
-        .container {
-            display: grid;
-            grid-template-areas: 
-                "A A A"
-                "B C D"
-                "E E F"
-                "G G G";
-            grid-gap: 10px;
-        }
-        .container > div {
-            padding: 20px;
-            color: white;
-            font-size: 1.5em;
-            text-align: center;
-        }
-        .A { grid-area: A; background-color: darkslateblue; }
-        .B { grid-area: B; background-color: orange; }
-        .C { grid-area: C; background-color: greenyellow; }
-        .D { grid-area: D; background-color: red; }
-        .E { grid-area: E; background-color: yellow; }
-        .F { grid-area: F; background-color: purple; }
-        .G { grid-area: G; background-color: green; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Circles</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.circle1 {
+  background-color: #fa0af6; 
+  top: 100px;
+  left: 100px;
+}
+
+.circle2 {
+  background-color: #db0db2; 
+  top: 100px;
+  left: 170px;
+}
+
+.circle3 {
+  background-color: #680657  ; 
+  top: 170px;
+  left: 135px;
+}
+
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="A">A</div>
-        <div class="B">B</div>
-        <div class="C">C</div>
-        <div class="D">D</div>
-        <div class="E">E</div>
-        <div class="F">F</div>
-        <div class="G">G</div>
-    </div>
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
 </body>
 </html>
-
