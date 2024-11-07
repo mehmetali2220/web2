@@ -19,9 +19,15 @@
 <br>
 
 <label for="sifre">sifre:</label>
-<input type="password" name="sifre" id="sifre"required placeholder="???????@gmail.com">
+<input type="password" name="sifre" id="sifre"required placeholder="*****">
 <br>
 <br>
+
+<label for="eposta">eposta adresiniz:</label>
+<input type="email" name="email" id="email" placeholder="??????@Gmail.com" required>
+<br>
+<br>
+
 
 <label for="telefon">telefon:</label>
 <input type="tel" name="telefon" id="telefon" placeholder="(555)-555-5555" maxlength="10">
@@ -47,7 +53,9 @@
 <br>
 <br>
 
-<select name="" id="">
+<label for="emeklilik">emekliliğinin bağlı olduğu kurum: </label>
+<br>
+<select name="" id="emeklilik">
 <option value="İ">işsiz</option>  
 <option value="Ö">öğrenci</option>
 <option value="Ç">Hala çalışıyor</option>
@@ -71,15 +79,18 @@
 <br>
 <br>
 
-<input type="file" accept=".pdf">
+<label for="adlisicil">adli sicil kaydınızı aşağıdaki bölümü pdf formatında ekleyiniz</label>
+<br>
+<input type="file" id="adlisicil"   accept=".pdf" required>
 <br>
 <br>
 
-<input type="reset" >
 <input type="submit">
+<input type="reset" >
 
 
-  </form>
+
+</form>
   
 </body>
 </html>
