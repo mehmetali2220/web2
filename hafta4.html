@@ -1,96 +1,140 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px; 
+      max-height: 90vh; 
+      overflow-y: auto; 
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333333;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #da046b;
+      border-radius: 4px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"]
+     {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      color: #ffffff;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+    }
+
+    input[type="reset"] {
+      background-color: #f44336;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff00bf;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #e53935;
+    }
+
+    input[type="file"],
+    textarea {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  
+
   <form action="">
-    <label for="isim">ad:</label>
-    <input type="text" name="isim" id="isim"required>
-<br>
-<br>
+    <label for="isim">Ad:</label>
+    <input type="text" name="isim" id="isim" required>
 
-    <label for="soyad">soyad:</label>
-    <input type="text" name="soyad" id="soyad"required>
+    <label for="soyad">Soyad:</label>
+    <input type="text" name="soyad" id="soyad" required>
 
-<br>
-<br>
+    <label for="sifre">Şifre:</label>
+    <input type="password" name="sifre" id="sifre" required placeholder="*****">
 
-<label for="sifre">sifre:</label>
-<input type="password" name="sifre" id="sifre"required placeholder="*****">
-<br>
-<br>
+    <label for="eposta">E-posta adresiniz:</label>
+    <input type="email" name="email" id="email" placeholder="??????@gmail.com" required>
 
-<label for="eposta">eposta adresiniz:</label>
-<input type="email" name="email" id="email" placeholder="??????@Gmail.com" required>
-<br>
-<br>
+    <label for="telefon">Telefon:</label>
+    <input type="tel" name="telefon" id="telefon" placeholder="(555)-555-5555" maxlength="10">
 
+    <label for="tarih">Doğum Günü:</label>
+    <input type="date" name="tarih" id="tarih" required>
 
-<label for="telefon">telefon:</label>
-<input type="tel" name="telefon" id="telefon" placeholder="(555)-555-5555" maxlength="10">
-<br>
-<br>
+    <label for="kardeş">Kardeş Sayınız:</label>
+    <input type="number" name="kardeş" id="kardeş" required min="0" max="30">
 
-<label for="tarih">doğum Günü:</label>
-<input type="date" name="tarih" id="tarih" required>
-<br>
-<br>
+    <label>Cinsiyet:</label>
+    <label for="erkek"><input type="radio" name="cinsiyet" id="erkek" value="K" required>Erkek</label>
+    <label for="kadın"><input type="radio" name="cinsiyet" id="kadın" value="E" required>Kadın</label>
 
-<label for="kardeş">kardeş sayınız:</label>
-<input type="number" name="kardeş" id="kardeş" required min="0" max="30">
-<br>
-<br>
+    <label for="emeklilik">Emekliliğinizin bağlı olduğu kurum:</label>
+    <select name="emeklilik" id="emeklilik">
+      <option value="İ">İşsiz</option>  
+      <option value="Ö">Öğrenci</option>
+      <option value="Ç">Hala çalışıyor</option>
+      <option value="ES">Emekli Sandığı</option>
+      <option value="B">Bağkur</option>
+      <option value="S">SSK</option>
+    </select>
 
-<label for="cinsiyet">cinsiyet</label>
-<br>
-<label for="kadın">erkek:</label>
-<input type="radio" name="cinsiyet" id="erkek" value="K"required>
-<label for="erkek">kadın:</label>
-<input type="radio" name="cinsiyet" id="kadın" value="E"required>
-<br>
-<br>
+    <label for="onay">Formu kendi rızam ile dolduruyorum</label>
+    <input type="checkbox" name="onay" id="onay" required>
 
-<label for="emeklilik">emekliliğinin bağlı olduğu kurum: </label>
-<br>
-<select name="" id="emeklilik">
-<option value="İ">işsiz</option>  
-<option value="Ö">öğrenci</option>
-<option value="Ç">Hala çalışıyor</option>
-<option value="ES">emekli sandığı</option>
-<option value="B">bağkur</option>
-<option value="S">SSK</option>
-</select>
+    <label for="textarea">Açıklamalar:</label>
+    <textarea name="textarea" id="textarea" cols="15" rows="5"></textarea>
 
-<br>
-<br>
+    <label for="adlisicil">Adli sicil kaydınızı aşağıdaki bölüme PDF formatında ekleyiniz</label>
+    <input type="file" id="adlisicil" accept=".pdf" required>
 
-<label for="">formu kendi rızam ile dolduruyorum</label>
-<input type="checkbox" name="" ıd="">
-<br>
-<br>
-
-
-
-<textarea name="" id="" cols="15" rows="5">
-</textarea>
-<br>
-<br>
-
-<label for="adlisicil">adli sicil kaydınızı aşağıdaki bölümü pdf formatında ekleyiniz</label>
-<br>
-<input type="file" id="adlisicil"   accept=".pdf" required>
-<br>
-<br>
-
-<input type="submit">
-<input type="reset" >
-
-
-
-</form>
+    <input type="submit" value="Gönder">
+    <input type="reset" value="Temizle">
+  </form>
   
 </body>
 </html>
