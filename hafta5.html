@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overlapping Circles</title>
-  <link rel="stylesheet" href="styles.css">
+<title>hafta5di galiba bu ödev:D</title>
   <style>
+  
     body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: white;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ff01b3;
+      overflow: hidden;
+    }
 
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  opacity: 0.7;
-}
+  
+    .circle {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0.8;
+      transition: transform 0.3s;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-.circle1 {
-  background-color: #fa0af6; 
-  top: 100px;
-  left: 100px;
-}
+    .circle:hover {
+      transform: scale(1.1); 
+    }
+    .circle1 {
+      background-color: #fa0af6; 
+      top: 100px;
+      left: 100px;
+    }
 
-.circle2 {
-  background-color: #db0db2; 
-  top: 100px;
-  left: 170px;
-}
+    .circle2 {
+      background-color: #db0db2; 
+      top: 100px;
+      left: 170px;
+    }
 
-.circle3 {
-  background-color: #680657  ; 
-  top: 170px;
-  left: 135px;
-}
-
+    .circle3 {
+      background-color: #680657; 
+      top: 170px;
+      left: 135px;
+    }
   </style>
 </head>
 <body>
