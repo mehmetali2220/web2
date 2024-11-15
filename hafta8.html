@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Arka Plan ve Resim Göster/Gizle</title>
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+        .hidden {
+            display: none;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img id="image1" src="asıldöner.jpg" class="hidden" alt="Asıl Döner">
+    <img id="image2" src="döner.jpeg" class="hidden" alt="Döner">
+    <img id="image3" src="kedi.jpg" class="hidden" alt="Kedi">
+</div>
+
+<button onclick="toggleImage('image1')">Asıl Döner Göster/Gizle</button>
+<button onclick="toggleImage('image2')">Döner Göster/Gizle</button>
+<button onclick="toggleImage('image3')">Kedi Göster/Gizle</button>
+
+<script>
+    const backgroundColors = ['#f4a261', '#e76f51', '#2a9d8f', '#264653', '#e9c46a', '#a8dadc', '#457b9d', '#1d3557', '#ffb703', '#8ecae6'];
+
+    const images = [
+        'asıldöner.jpg', 'döner.jpeg', 'döner.jpeg.jpeg', 'kedi.jpg', 'sonmüş lamba.jpeg', 'yenidöner.jpg'
+    ];
+
+    window.onload = function() {
+        changeBackground();
+        showRandomImage();
+    };
+
+    function changeBackground() {
+        const randomColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+        document.body.style.backgroundColor = randomColor;
+    }
+
+    function showRandomImage() {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        const randomImage = images[randomIndex];
+        document.getElementById('image1').src = randomImage;
+        document.getElementById('image1').classList.remove('hidden');
+    }
+
+    function toggleImage(imageId) {
+        const image = document.getElementById(imageId);
+        if (image.classList.contains('hidden')) {
+            image.classList.remove('hidden');
+        } else {
+            image.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
