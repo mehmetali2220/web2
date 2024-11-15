@@ -30,7 +30,6 @@
       margin-bottom: 5px;
       color: #333333;
     }
-
     input[type="text"],
     input[type="password"],
     input[type="email"],
@@ -49,10 +48,8 @@
     input[type="checkbox"] {
       margin-right: 5px;
     }
-
     input[type="submit"],
-    input[type="reset"]
-     {
+    input[type="reset"] {
       width: 48%;
       padding: 10px;
       border: none;
@@ -62,23 +59,18 @@
       cursor: pointer;
       margin-top: 10px;
     }
-
     input[type="submit"] {
       background-color: #4CAF50;
     }
-
     input[type="reset"] {
       background-color: #f44336;
     }
-
     input[type="submit"]:hover {
       background-color: #ff00bf;
     }
-
     input[type="reset"]:hover {
       background-color: #e53935;
     }
-
     input[type="file"],
     textarea {
       width: 100%;
@@ -89,10 +81,10 @@
 
   <form action="">
     <label for="isim">Ad:</label>
-    <input type="text" name="isim" id="isim" required placeholder=Mehmet Ali>
+    <input type="text" name="isim" id="isim" required placeholder="Mehmet Ali">
 
     <label for="soyad">Soyad:</label>
-    <input type="text" name="soyad" id="soyad" required placeholder=Özlale>
+    <input type="text" name="soyad" id="soyad" required placeholder="Özlale">
 
     <label for="sifre">Şifre:</label>
     <input type="password" name="sifre" id="sifre" required placeholder="*****">
@@ -131,6 +123,17 @@
 
     <label for="adlisicil">Adli sicil kaydınızı aşağıdaki bölüme PDF formatında ekleyiniz</label>
     <input type="file" id="adlisicil" accept=".pdf" required>
+    
+    <label>TML kaç türlü liste düzenler?</label>
+    <label><input type="radio" name="soru1" value="Hiç"> Hiç</label>
+    <label><input type="radio" name="soru1" value="1"> 1</label>
+    <label><input type="radio" name="soru1" value="2"> 2</label>
+    <label><input type="radio" name="soru1" value="3"> 3</label>
+    <label>Satır başlığı yazan HTML kodu nedir?</label>
+    <label><input type="radio" name="soru2" value="<table th> ... </table>"> &lt;table th&gt; ... &lt;/table&gt;</label>
+    <label><input type="radio" name="soru2" value="<table> th </table>"> &lt;table&gt; th &lt;/table&gt;</label>
+    <label><input type="radio" name="soru2" value="<th></th>"> &lt;th&gt;&lt;/th&gt;</label>
+    <label><input type="radio" name="soru2" value="<th bold></th>"> &lt;th bold&gt;&lt;/th&gt;</label>
 
     <input type="submit" value="Gönder">
     <input type="reset" value="Temizle">
