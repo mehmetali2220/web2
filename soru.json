@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "question": "Ekrandaki resime mouse ile üstünde durduğumuzda ... yere giden kodu yazmak için hangisi kullanılır?",
+      "options": {
+        "a": "blank",
+        "b": "title",
+        "c": "a href"
+      }
+    },
+    {
+      "question": "Kapatılma tagi olmayan tag aşağıdakilerden hangisidir?",
+      "options": {
+        "a": "buddy",
+        "b": "hr",
+        "c": "h2"
+      }
+    },
+    {
+      "question": "Eklenen resmin boyutunu oranlamak için kullanılacak kod aşağıdakilerden hangisidir?",
+      "options": {
+        "a": "width",
+        "b": "dimension",
+        "c": "length"
+      }
+    },
+    {
+      "question": "Bir yazının üst sembol gibi yazılmasını sağlayan kod nedir?",
+      "options": {
+        "a": "<sub>",
+        "b": "<ins>",
+        "c": "<mark>"
+      }
+    },
+    {
+      "question": "Sıralı listelerin kodu hangisidir?",
+      "options": {
+        "a": "ul",
+        "b": "ci",
+        "c": "ıl"
+      }
+    },
+    {
+      "question": "<p> lorem </p> ne işe yarar?",
+      "options": {
+        "a": "rastgele bir metin hazırlar",
+        "b": "rastgele rakamlar oluşturur",
+        "c": "rastgele bir renk atar"
+      }
+    },
+    {
+      "question": "Ekranın boyutuna göre kendi oranını otomatik değiştiren kod hangisidir?",
+      "options": {
+        "a": "div",
+        "b": "span",
+        "c": "meta"
+      }
+    },
+    {
+      "question": "IFrame ne işe yarar?",
+      "options": {
+        "a": "sayfa içerisinde sayfa açma",
+        "b": "sayfa içerisinde yazı ekleme",
+        "c": "sayfa içerisine"
+      }
+    },
+    {
+      "question": "Bir resim ekledik ve üzerine gelindiğinde resime dair bir yazı çıkmasını istiyorum. Aşağıdakilerden hangisini kullanmalıyım?",
+      "options": {
+        "a": "alt",
+        "b": "title",
+        "c": "width"
+      }
+    },
+    {
+      "question": "Oluşturduğumuz listede bulunan satır sayısı aşağıdakilerden hangisine bağlıdır?",
+      "options": {
+        "a": "tr",
+        "b": "th",
+        "c": "td"
+      }
+    }
+  ]
+}
