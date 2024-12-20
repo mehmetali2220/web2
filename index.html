@@ -8,24 +8,33 @@
     /* Genel düzen */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
+      background-color: #ffe6f7; /* Hafif pembe arka plan */
+      color: #4a004e; /* Mor tonlu metin rengi */
       margin: 0;
       padding: 0;
+    }
+    /* Üst bilgilendirme alanı */
+    .header {
+      background-color: #800080; /* Mor arka plan */
+      color: #fff; /* Beyaz yazı rengi */
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
     }
     /* Konteyner */
     .container {
       max-width: 800px;
       margin: 50px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #fff0fa; /* Daha açık bir pembe arka plan */
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
     /* Başlık */
     h1 {
       text-align: center;
-      color: #444;
+      color: #800080; /* Mor renk */
     }
     /* Navigasyon */
     nav ul {
@@ -38,23 +47,28 @@
     /* Link stili */
     nav ul li a {
       text-decoration: none;
-      font-size: 16px;
-      color: #0077cc;
+      font-size: 18px;
+      color: #ff1493; /* Parlak pembe */
       padding: 10px 15px;
       border: 2px solid transparent;
       border-radius: 5px;
       display: block;
+      text-align: center;
       transition: all 0.3s ease;
     }
     /* Hover efekti */
     nav ul li a:hover {
-      background-color: #0077cc;
-      color: #fff;
-      border-color: #005fa3;
+      background-color: #800080; /* Mor arka plan */
+      color: #fff; /* Beyaz metin */
+      transform: scale(1.1); /* Büyüme efekti */
+      border-color: #ff1493; /* Pembe sınır */
     }
   </style>
 </head>
 <body>
+  <div class="header">
+    Ödevlerime buradan bakabilirsiniz
+  </div>
   <div class="container">
     <h1>Ödevler Listesi</h1>
     <nav>
