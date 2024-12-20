@@ -5,46 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masal</title>
     <style>
+        /* Genel stil */
         body {
             font-family: Arial, sans-serif;
-            background-color: #e408d6;
-            color: #fb0bb7;
+            background-color: #e408d6; /* Pembe arka plan */
+            color: #fb0bb7; /* Pembe metin rengi */
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
+
+        /* Başlıklar */
         h1, h3 {
             text-align: center;
-            color: #000000;
+            color: #000000; /* Siyah başlık rengi */
         }
+
+        /* Navigasyon menüsü */
         nav {
             text-align: center;
             margin-bottom: 20px;
         }
+
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #58043a;
+            color: #58043a; /* Mor renk */
             font-weight: bold;
         }
+
+        /* Bölüm stili */
         section {
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            background-color: #4e9919;
+            background-color: #4e9919; /* Yeşil arka plan */
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
+
+        /* Resim stili */
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 10px auto;
         }
+
+        /* Bölüm geçiş efekti */
+        section {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        /* Fade-in animasyonu */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Link aktifken stil */
+        nav a:hover {
+            color: #ff1493; /* Parlak pembe */
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
+
     <h1>Bir Macera Masalı</h1>
 
     <nav>
@@ -57,29 +91,30 @@
     <section id="bolum1">
         <h3>1. Bölüm</h3>
         <p>Bir varmış, bir yokmuş... Küçük bir kedi ormanda dolaşırken nefis bir döner kokusu almış. Heyecanla kokunun kaynağını bulmaya çalışmış.</p>
-        <img src="kedi.jpg" >
-        <img src="döner.jpeg">
+        <img src="kedi.jpg" alt="Kedi" >
+        <img src="döner.jpeg" alt="Döner">
     </section>
 
     <section id="bolum2">
         <h3>2. Bölüm</h3>
         <p>Koku onu, garip bir ağacın altına getirmiş. Ağaçta dönerler asılıymış! Kedi, ağzı sulanarak dönerlere bakmış.</p>
-        <img src="kedi.jpg" >
-        <img src="yenidöner.jpg" >
+        <img src="kedi.jpg" alt="Kedi">
+        <img src="yenidöner.jpg" alt="Yeni Döner">
     </section>
 
     <section id="bolum3">
         <h3>3. Bölüm</h3>
         <p>Tam dönerlerden birini yiyecekken, dev bir kuş ağacın dalında belirip kediye şöyle demiş: "Bu dönerler benim!" Kedi ürkerek geri çekilmiş.</p>
-        <img src="kedi.jpg" >
-        <img src="döner.jpeg.jpeg" >
+        <img src="kedi.jpg" alt="Kedi">
+        <img src="döner.jpeg.jpeg" alt="Döner">
     </section>
 
     <section id="bolum4">
         <h3>4. Bölüm</h3>
         <p>Ancak kuş, kedinin açlığını fark edince ona bir döner ikram etmiş. İkisi de ormanda keyifle dönerlerini yemişler ve arkadaş olmuşlar.</p>
-        <img src="kedi.jpg" >
-        <img src="asıldöner.jpg" >
+        <img src="kedi.jpg" alt="Kedi">
+        <img src="asıldöner.jpg" alt="Asıl Döner">
     </section>
+
 </body>
 </html>
