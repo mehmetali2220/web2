@@ -69,11 +69,13 @@
     .figure {
       position: fixed;
       top: 0;
-      width: 100px;
+      width: 50px;
       height: 100%;
-      background-image: radial-gradient(circle, #ff1493 20%, transparent 20%);
-      background-size: 50px 50px;
-      opacity: 0.8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 24px;
     }
     .figure.left {
       left: 0;
@@ -90,8 +92,12 @@
   </div>
 
   <!-- Figürler -->
-  <div class="figure left"></div>
-  <div class="figure right"></div>
+  <div class="figure left">
+    😊<br>😊<br>😊<br>😊<br>😊<br>😊
+  </div>
+  <div class="figure right">
+    😊<br>😊<br>😊<br>😊<br>😊<br>😊
+  </div>
 
   <!-- Ana içerik -->
   <div class="container">
