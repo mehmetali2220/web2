@@ -2,15 +2,16 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>yüz ifadelerine bi bak kral mükemmel diğilmi♥♥♥♥♥</title>
+    <title>Yüz İfadelerine Bir Bak Kral Mükemmel Değil Mi ♥♥♥♥♥</title>
     <style>
         body {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            height: 9vh;
+            height: 100vh;
             background-color: #f3f3f3;
             margin: 0;
+            flex-direction: column;
         }
 
         .box {
@@ -22,33 +23,40 @@
             justify-content: center;
             font-weight: bold;
             border-radius: 50%;
+            margin: 10px;
         }
+
         .up-down {
             background-color: #ff00aa;
             animation: upDown 4s infinite alternate;
         }
+
         .scale-color {
             background-color: #ff00aa;
             animation: scaleColor 4s infinite alternate;
         }
+
         .fade {
             background-color: #ff00aa;
             animation: fadeEffect 4s infinite alternate;
         }
+
         .left-right {
             background-color: #ff00aa;
             animation: leftRight 4s infinite alternate;
         }
+
         .rotate {
             background-color: #ff00aa;
             animation: rotateEffect 4s infinite linear;
         }
-@keyframes upDown {
+
+        @keyframes upDown {
             from { transform: translateY(0); }
             to { transform: translateY(50px); }
         }
 
-   @keyframes scaleColor {
+        @keyframes scaleColor {
             from {
                 transform: scale(1);
                 background-color: #ff00aa;
@@ -59,17 +67,17 @@
             }
         }
 
- @keyframes fadeEffect {
+        @keyframes fadeEffect {
             from { opacity: 1; }
             to { opacity: 0.2; }
         }
 
-       @keyframes leftRight {
+        @keyframes leftRight {
             from { transform: translateX(0); }
             to { transform: translateX(50px); }
         }
 
-@keyframes rotateEffect {
+        @keyframes rotateEffect {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
