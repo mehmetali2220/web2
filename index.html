@@ -12,6 +12,7 @@
       color: #4a004e; /* Mor tonlu metin rengi */
       margin: 0;
       padding: 0;
+      position: relative;
     }
     /* Üst bilgilendirme alanı */
     .header {
@@ -63,12 +64,36 @@
       transform: scale(1.1); /* Büyüme efekti */
       border-color: #ff1493; /* Pembe sınır */
     }
+    /* Figürlerin stili */
+    .figure {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #ff1493; /* Pembe figür */
+      border-radius: 50%; /* Yuvarlak figür */
+      opacity: 0.8;
+    }
+    .figure.left {
+      top: 100px;
+      left: -50px;
+    }
+    .figure.right {
+      top: 200px;
+      right: -50px;
+    }
   </style>
 </head>
 <body>
+  <!-- Üst bilgilendirme -->
   <div class="header">
     Ödevlerime buradan bakabilirsiniz
   </div>
+
+  <!-- Figürler -->
+  <div class="figure left"></div>
+  <div class="figure right"></div>
+
+  <!-- Ana içerik -->
   <div class="container">
     <h1>Ödevler Listesi</h1>
     <nav>
