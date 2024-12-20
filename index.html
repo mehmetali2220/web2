@@ -13,6 +13,7 @@
       margin: 0;
       padding: 0;
       position: relative;
+      overflow-x: hidden; /* Taşmaları önler */
     }
     /* Üst bilgilendirme alanı */
     .header {
@@ -66,20 +67,19 @@
     }
     /* Figürlerin stili */
     .figure {
-      position: absolute;
+      position: fixed;
+      top: 0;
       width: 100px;
-      height: 100px;
-      background-color: #ff1493; /* Pembe figür */
-      border-radius: 50%; /* Yuvarlak figür */
+      height: 100%;
+      background-image: radial-gradient(circle, #ff1493 20%, transparent 20%);
+      background-size: 50px 50px;
       opacity: 0.8;
     }
     .figure.left {
-      top: 100px;
-      left: -50px;
+      left: 0;
     }
     .figure.right {
-      top: 200px;
-      right: -50px;
+      right: 0;
     }
   </style>
 </head>
