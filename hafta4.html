@@ -1,143 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    form {
-      background-color: #ffffff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 90%;
-      max-width: 400px; 
-      max-height: 90vh; 
-      overflow-y: auto; 
-    }
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #333333;
-    }
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="number"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #da046b;
-      border-radius: 4px;
-    }
-    input[type="radio"],
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-    input[type="submit"],
-    input[type="reset"] {
-      width: 48%;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      color: #ffffff;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    input[type="submit"] {
-      background-color: #4CAF50;
-    }
-    input[type="reset"] {
-      background-color: #f44336;
-    }
-    input[type="submit"]:hover {
-      background-color: #ff00bf;
-    }
-    input[type="reset"]:hover {
-      background-color: #e53935;
-    }
-    input[type="file"],
-    textarea {
-      width: 100%;
-    }
-  </style>
+
+    <title>Document</title>
+    
+    
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: #c71585;
+    text-align: center;
+}
+figure {
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 16px;
+    color: #d87093;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffb6c1; 
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffc0cb; 
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8c8dc; 
+}
+
+tr:hover td {
+    background-color: #f5b3cf; 
+}
+</style>
 </head>
 <body>
+<a href="https://cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0002.1.8.0.webp">fotoğraf</a>    
+<figure>
+    <figcaption>Şarkıyı dinle</figcaption>
+    <audio controls src="şarkı.mp3">
+      <a href="şarkı.mp3"> Download audio </a>
+    </audio>
+      </figure>
 
-  <form action="">
-    <label for="isim">Ad:</label>
-    <input type="text" name="isim" id="isim" required placeholder="Mehmet Ali">
+<p>tablo 1 ders programım</p>
+<table>
 
-    <label for="soyad">Soyad:</label>
-    <input type="text" name="soyad" id="soyad" required placeholder="Özlale">
+<tr align="center">
+<th>saat</th>
+<th>pazartesi</th>
+<th>salı</th>
+<th>çarşamba</th>
+<th>perşembe</th>
+<th>cuma</th>
+</tr>
 
-    <label for="sifre">Şifre:</label>
-    <input type="password" name="sifre" id="sifre" required placeholder="*****">
+<tr align="center">
+<td>08:40-09:30</td>
+<td>boş</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>BTE111</td>
+<td>boş</td>
+</tr>
 
-    <label for="eposta">E-posta adresiniz:</label>
-    <input type="email" name="email" id="email" placeholder="??????@gmail.com" required>
+<tr align="center">
+<td>09:40-10:30</td>
+<td>BTE115</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>BTE11</td>
+<td>boş</td>
+</tr>
 
-    <label for="telefon">Telefon:</label>
-    <input type="tel" name="telefon" id="telefon" placeholder="(555)-555-5555" maxlength="10">
+<tr align="center">
+<td>10:40-11:30</td>
+<td>BTE115</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+</tr>
 
-    <label for="tarih">Doğum Günü:</label>
-    <input type="date" name="tarih" id="tarih" required>
+<tr align="center">
+<td>11:40-12:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTE111.01</td>
+<td>boş</td>
+</tr>
 
-    <label for="kardeş">Kardeş Sayınız:</label>
-    <input type="number" name="kardeş" id="kardeş" required min="0" max="30">
+<tr align="center">
+<td>12:40-13:30</td>
+<td>AIT105</td>
+<td>tkd107</td>
+<td>boş</td>
+<td>BTE111.01</td>
+<td>boş</td>
+</tr>
 
-    <label>Cinsiyet:</label>
-    <label for="erkek"><input type="radio" name="cinsiyet" id="erkek" value="K" required>Erkek</label>
-    <label for="kadın"><input type="radio" name="cinsiyet" id="kadın" value="E" required>Kadın</label>
+<tr align="center">
+<td>13:40-14:30</td>
+<td>AIT105</td>
+<td>tkd107</td>
+<td>boş</td>
+<td>BTE111.02</td>
+<td>boş</td>
+</tr>
 
-    <label for="emeklilik">Emekliliğinizin bağlı olduğu kurum:</label>
-    <select name="emeklilik" id="emeklilik">
-      <option value="İ">İşsiz</option>  
-      <option value="Ö">Öğrenci</option>
-      <option value="Ç">Hala çalışıyor</option>
-      <option value="ES">Emekli Sandığı</option>
-      <option value="B">Bağkur</option>
-      <option value="S">SSK</option>
-    </select>
+<tr align="center">
+<td>14:40-15:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTE111.02</td>
+<td>boş</td>
+</tr>
 
-    <label for="onay">Formu kendi rızam ile dolduruyorum</label>
-    <input type="checkbox" name="onay" id="onay" required>
+<tr  align="center">
+<td>15:40-16:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTÖ105</td>
+</tr>
 
-    <label for="textarea">Açıklamalar:</label>
-    <textarea name="textarea" id="textarea" cols="15" rows="5"></textarea>
+<tr align="center">
+<td>16:40-17:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTÖ105</td>
+</tr>
 
-    <label for="adlisicil">Adli sicil kaydınızı aşağıdaki bölüme PDF formatında ekleyiniz</label>
-    <input type="file" id="adlisicil" accept=".pdf" required>
-    
-    <label>TML kaç türlü liste düzenler?</label>
-    <label><input type="radio" name="soru1" value="Hiç"> Hiç</label>
-    <label><input type="radio" name="soru1" value="1"> 1</label>
-    <label><input type="radio" name="soru1" value="2"> 2</label>
-    <label><input type="radio" name="soru1" value="3"> 3</label>
-    <label>Satır başlığı yazan HTML kodu nedir?</label>
-    <label><input type="radio" name="soru2" value="<table th> ... </table>"> &lt;table th&gt; ... &lt;/table&gt;</label>
-    <label><input type="radio" name="soru2" value="<table> th </table>"> &lt;table&gt; th &lt;/table&gt;</label>
-    <label><input type="radio" name="soru2" value="<th></th>"> &lt;th&gt;&lt;/th&gt;</label>
-    <label><input type="radio" name="soru2" value="<th bold></th>"> &lt;th bold&gt;&lt;/th&gt;</label>
+</table>
 
-    <input type="submit" value="Gönder">
-    <input type="reset" value="Temizle">
-  </form>
-  
+
+
 </body>
 </html>
