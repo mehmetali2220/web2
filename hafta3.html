@@ -1,174 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML Ders Programı</title>
+
+    <title>Document</title>
+    
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
 
-        a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: bold;
-        }
+a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        h1 {
-            color: #333;
-            text-align: center;
-        }
 
-        figure {
-            max-width: 300px;
-            margin: 20px auto;
-            text-align: center;
-        }
+h1 {
+    color: #333;
+    text-align: center;
+}
+figure {
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
 
-        figcaption {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 10px;
-        }
+figcaption {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
 
-        audio {
-            width: 100%;
-        }
+audio {
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+th, td {
+    padding: 12px;
+    text-align: center;
+}
 
-        th, td {
-            padding: 12px;
-            text-align: center;
-        }
+th {
+    background-color: #ffb6c1; 
+    color: #333;
+    font-weight: bold;
+}
 
-        th {
-            background-color: #ffb6c1; /* Pembe tonunda başlık */
-            color: #333;
-            font-weight: bold;
-        }
+td {
+    background-color: #add8e6; 
+    color: #333;
+}
 
-        td {
-            background-color: #ffe4e1; /* Açık pembe hücreler */
-            color: #333;
-        }
+tr:nth-child(even) td {
+    background-color: #e0f7fa; 
+}
 
-        tr:nth-child(even) td {
-            background-color: #f8d7da; /* Hafif farklı pembe */
-        }
-
-        tr:hover td {
-            background-color: #f5c6cb; /* Daha koyu pembe */
-        }
-    </style>
+tr:hover td {
+    background-color: #b3e5fc; 
+}
+</style>
 </head>
 <body>
-    <h1>HTML Ders Programı</h1>
+<a href="https://cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0002.1.8.0.webp">fotoğraf</a>    
+<figure>
+    <figcaption>Şarkıyı dinle</figcaption>
+    <audio controls src="şarkı.mp3">
+      <a href="şarkı.mp3"> Download audio </a>
+    </audio>
+      </figure>
 
-    <a href="https://cdn.e-devlet.gov.tr/themes/izmir/images/banners_webp/b0002.1.8.0.webp">Fotoğraf</a>
-    
-    <figure>
-        <figcaption>Şarkıyı Dinle</figcaption>
-        <audio controls src="şarkı.mp3">
-            <a href="şarkı.mp3">Download Audio</a>
-        </audio>
-    </figure>
+<p>tablo 1 ders programım</p>
+<table bgcolor = "red">
 
-    <p>Tablo 1: HTML Ders Programım</p>
 
-    <table>
-        <tr>
-            <th>Saat</th>
-            <th>Pazartesi</th>
-            <th>Salı</th>
-            <th>Çarşamba</th>
-            <th>Perşembe</th>
-            <th>Cuma</th>
-        </tr>
-        <tr>
-            <td>08:40-09:30</td>
-            <td></td>
-            <td>BTE113</td>
-            <td></td>
-            <td>BTE111</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>09:40-10:30</td>
-            <td>BTE115</td>
-            <td>BTE113</td>
-            <td></td>
-            <td>BTE111</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>10:40-11:30</td>
-            <td>BTE115</td>
-            <td>BTE113</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-        </tr>
-        <tr>
-            <td>11:40-12:30</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>BTE111.01</td>
-            <td>Boş</td>
-        </tr>
-        <tr>
-            <td>12:40-13:30</td>
-            <td>AIT105</td>
-            <td>TKD107</td>
-            <td>Boş</td>
-            <td>BTE111.01</td>
-            <td>Boş</td>
-        </tr>
-        <tr>
-            <td>13:40-14:30</td>
-            <td>AIT105</td>
-            <td>TKD107</td>
-            <td>Boş</td>
-            <td>BTE111.02</td>
-            <td>Boş</td>
-        </tr>
-        <tr>
-            <td>14:40-15:30</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>BTE111.02</td>
-            <td>Boş</td>
-        </tr>
-        <tr>
-            <td>15:40-16:30</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>BTÖ105</td>
-        </tr>
-        <tr>
-            <td>16:40-17:30</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>Boş</td>
-            <td>BTÖ105</td>
-        </tr>
-    </table>
+<tr align="center"
+bgcolor = "pink">
+<th>saat</th>
+<th>pazartesi</th>
+<th>salı</th>
+<th>çarşamba</th>
+<th>perşembe</th>
+<th>cuma</th>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>08:40-09:30</td>
+<td>boş</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>BTE111</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>09:40-10:30</td>
+<td>BTE115</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>BTE11</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>10:40-11:30</td>
+<td>BTE115</td>
+<td>BTE113</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>11:40-12:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTE111.01</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>12:40-13:30</td>
+<td>AIT105</td>
+<td>tkd107</td>
+<td>boş</td>
+<td>BTE111.01</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>13:40-14:30</td>
+<td>AIT105</td>
+<td>tkd107</td>
+<td>boş</td>
+<td>BTE111.02</td>
+<td>boş</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>14:40-15:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTE111.02</td>
+<td>boş</td>
+</tr>
+
+<tr  align="center"
+bgcolor = "blue">
+<td>15:40-16:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTÖ105</td>
+</tr>
+
+<tr align="center"
+bgcolor = "blue">
+<td>16:40-17:30</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>boş</td>
+<td>BTÖ105</td>
+</tr>
+
+
+
+</table>
+
+
+
 </body>
 </html>
