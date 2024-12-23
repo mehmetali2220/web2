@@ -16,7 +16,7 @@
         }
 
         .duyuru {
-            visibility: hidden; /* İlk başta görünmez */
+            visibility: hidden; 
             opacity: 0;
             background-color: #ff5722;
             color: white;
@@ -25,7 +25,21 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             position: absolute;
-            animation: fadeInOut 5s forwards; /* Animasyonu başlat */
+            animation: fadeInOut 5s forwards; 
+        }
+
+        .uyari {
+            visibility: hidden; 
+            opacity: 0;
+            background-color: #f44336;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: absolute;
+            animation: blink 1s infinite; /* Yanıp sönme animasyonu */
+            top: 100px;
         }
 
         @keyframes fadeInOut {
@@ -44,23 +58,33 @@
                 visibility: hidden;
             }
         }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="duyuru" class="duyuru">Temel, Dursun’la beraber uçakla seyahate çıkmış. Pilot anons yapmış:
+    <div id="duyuru" class="duyuru">Duyuru Penceresi</div>
 
-        "Sevgili yolcular, uçağımızın sağ motoru bozuldu ama endişe etmeyin, diğer motorla yolculuğumuza devam edeceğiz. Fakat bir saat geç varacağız."
-        Bir süre sonra pilot tekrar anons yapmış:
-        
-        "Sevgili yolcular, sol motor da bozuldu, ama korkmayın. Yedek motorumuzla ilerleyeceğiz. Ancak varışımız iki saat gecikecek."
-        Temel, Dursun’a dönmüş:
-        
-        "Ula Dursun, bu yedek motor da bozulursa bütün gün havada mı kalacağız?"!</div>
+    
+    <div id="uyari" class="uyari">Yanıp Sönen Uyarı Ekranı</div>
+
     <script>
-        // Duyuru penceresini aç
+        
         window.onload = () => {
             const duyuru = document.getElementById('duyuru');
+            const uyari = document.getElementById('uyari');
             duyuru.style.visibility = 'visible'; // Görünür yap
+            uyari.style.visibility = 'visible'; // Yanıp sönen uyarı ekranını görünür yap
         };
     </script>
 </body>
